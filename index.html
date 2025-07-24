@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Registrado - Mockup Rediseño</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.webp" alt="Café Registrado" class="logo-img">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#productos">Productos ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#cafe">Café</a></li>
+                            <li><a href="#te">Té en Hebras</a></li>
+                            <li><a href="#cafeteras">Cafeteras & Balanzas</a></li>
+                            <li><a href="#accesorios">Tazas & Accesorios</a></li>
+                            <li><a href="#gift-cards">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#locales">Nuestros Locales</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#mayoristas">Mayoristas</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="search-btn">🔍</button>
+                    <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>El Café que Registra <br><span class="highlight">Momentos Únicos</span></h1>
+                <p>Descubrí nuestra selección premium de cafés especiales, tostados artesanalmente para brindar la mejor experiencia en cada taza.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explorar Cafés</button>
+                    <button class="btn btn-secondary">Conocer Nuestro Proceso</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="FONDO CR.png" alt="Café Registrado - Ambiente" class="hero-img">
+            </div>
+        </div>
+        
+        <!-- Promociones destacadas -->
+        <div class="promo-banner">
+            <div class="promo-item">
+                <span class="promo-icon">☕</span>
+                <span class="promo-text">10% OFF llevando 4 cafés de 250gr</span>
+            </div>
+            <div class="promo-item">
+                <span class="promo-icon">🚚</span>
+                <span class="promo-text">Envío gratis en CABA desde $40.000</span>
+            </div>
+            <div class="promo-item">
+                <span class="promo-icon">🌎</span>
+                <span class="promo-text">Envíos a todo el país</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías destacadas -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2>Nuestras Especialidades</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Cafe.webp" alt="Café" class="category-img">
+                    </div>
+                    <div class="category-content">
+                        <h3>Café Premium</h3>
+                        <p>Granos seleccionados y tostados artesanalmente</p>
+                        <button class="btn btn-outline">Ver Cafés</button>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Te en hebras.webp" alt="Té" class="category-img">
+                    </div>
+                    <div class="category-content">
+                        <h3>Té en Hebras</h3>
+                        <p>Variedades selectas para los amantes del té</p>
+                        <button class="btn btn-outline">Explorar Tés</button>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Cafeteras Y balanzas.webp" alt="Accesorios" class="category-img">
+                    </div>
+                    <div class="category-content">
+                        <h3>Cafeteras & Accesorios</h3>
+                        <p>Todo lo que necesitás para el café perfecto</p>
+                        <button class="btn btn-outline">Ver Equipamiento</button>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Tazas y Accesorios.webp" alt="Tazas" class="category-img">
+                    </div>
+                    <div class="category-content">
+                        <h3>Tazas & Accesorios</h3>
+                        <p>Tazas y complementos para disfrutar tu bebida</p>
+                        <button class="btn btn-outline">Ver Accesorios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                                                 <img src="https://via.placeholder.com/300x300/FF7A00/FFFFFF?text=Cafe+Blend" alt="Café Blend" class="product-img">
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Café Blend Especial</h3>
+                        <p class="product-description">Mezcla equilibrada con notas a chocolate y frutos secos</p>
+                        <div class="product-price">
+                            <span class="price">$8.500</span>
+                            <span class="price-unit">/ 250gr</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                                                 <img src="https://via.placeholder.com/300x300/FF9933/FFFFFF?text=Cafe+Origin" alt="Café Origen" class="product-img">
+                        <div class="product-badge">Nuevo</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Café Origen Único</h3>
+                        <p class="product-description">Café de origen colombiano con notas florales</p>
+                        <div class="product-price">
+                            <span class="price">$9.200</span>
+                            <span class="price-unit">/ 250gr</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                                                 <img src="https://via.placeholder.com/300x300/FF7A00/FFFFFF?text=Drip+Bags" alt="Drip Bags" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Drip Bags Premium</h3>
+                        <p class="product-description">Café filtrado individual para llevar</p>
+                        <div class="product-price">
+                            <span class="price">$6.800</span>
+                            <span class="price-unit">/ pack x10</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-secondary">Ver Todos los Productos</button>
+            </div>
+        </div>
+    </section>
+
+         <!-- Video Destacado -->
+     <section class="video-section">
+         <div class="container">
+             <div class="video-content">
+                 <h2>Descubrí Nuestro Proceso</h2>
+                 <p class="video-description">Conocé cómo seleccionamos y tostamos artesanalmente cada grano para lograr el café perfecto</p>
+                 <div class="video-container">
+                     <div class="video-wrapper">
+                         <iframe 
+                             src="https://player.vimeo.com/video/YOUR_VIDEO_ID" 
+                             width="640" 
+                             height="360" 
+                             frameborder="0" 
+                             allow="autoplay; fullscreen; picture-in-picture" 
+                             allowfullscreen
+                             title="Café Registrado - Nuestro Proceso">
+                         </iframe>
+                     </div>
+                     <div class="video-overlay">
+                         <button class="play-button" onclick="playVideo()">
+                             <span class="play-icon">▶</span>
+                         </button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <!-- Sobre nosotros -->
+     <section class="about-us">
+         <div class="container">
+             <div class="about-content">
+                 <div class="about-text">
+                     <h2>Nuestra Historia</h2>
+                     <p>En Café Registrado creemos que cada taza cuenta una historia. Desde nuestros inicios, nos hemos dedicado a seleccionar los mejores granos de café y crear experiencias únicas para nuestros clientes.</p>
+                     <p>Visitanos en nuestro local de Palermo y descubrí el proceso artesanal detrás de cada blend que preparamos especialmente para vos.</p>
+                     <button class="btn btn-outline">Conocer Más</button>
+                 </div>
+                 <div class="about-image">
+                     <img src="FONDO CR.png" alt="Café Registrado - Proceso" class="about-img">
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Café Registrado</h3>
+                    <p>El café que registra momentos únicos</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Café 250gr</a></li>
+                        <li><a href="#">Café 125gr</a></li>
+                        <li><a href="#">Drip Bags</a></li>
+                        <li><a href="#">Té en Hebras</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Mayoristas</a></li>
+                        <li><a href="#">Franquicias</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📍 Costa Rica 5901, CABA</p>
+                    <p>📞 +54 11 6837-7867</p>
+                    <p>✉️ hola@caferegistrado.com</p>
+                    <p>🕒 Lun a Dom: 8 a 20 hs</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Café Registrado. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ para los amantes del café</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
