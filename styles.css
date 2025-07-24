@@ -27,7 +27,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--white);
@@ -127,7 +127,7 @@ h4 {
 }
 
 .navbar {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .nav-container {
@@ -140,8 +140,9 @@ h4 {
 }
 
 .logo-img {
-    height: 50px;
+    height: 100px;
     width: auto;
+    max-width: 250px;
 }
 
 .nav-menu {
@@ -198,17 +199,25 @@ h4 {
     align-items: center;
 }
 
-.search-btn, .cart-btn {
+.search-btn, .user-btn, .cart-btn {
     background: none;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dark);
 }
 
-.search-btn:hover, .cart-btn:hover {
+.search-btn svg, .user-btn svg, .cart-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.search-btn:hover, .user-btn:hover, .cart-btn:hover {
     background-color: var(--gray-100);
 }
 
@@ -285,7 +294,17 @@ h4 {
 }
 
 .promo-icon {
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary-color);
+}
+
+.promo-icon svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* Featured Categories */
@@ -357,6 +376,11 @@ h4 {
 
 .category-card:hover .category-content {
     box-shadow: var(--shadow-lg);
+}
+
+.category-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .category-content p {
@@ -580,6 +604,13 @@ h4 {
 .footer-section p {
     margin-bottom: 0.5rem;
     color: var(--gray-300);
+    display: flex;
+    align-items: center;
+}
+
+.footer-section p svg {
+    color: var(--primary-color);
+    flex-shrink: 0;
 }
 
 .footer-section ul {
@@ -607,12 +638,22 @@ h4 {
 }
 
 .social-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem;
     background-color: var(--primary-color);
     border-radius: 50%;
     text-decoration: none;
     transition: var(--transition);
+    color: var(--white);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
 }
 
 .social-link:hover {
